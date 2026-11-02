@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chronic Kidney Disease Meal Recommendations</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Trebuchet MS', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            font-size: 2rem;
+            color: #48ab3a;
+            font-weight: bold;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 2rem 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .img {
+            flex: 0 0 40%; /* Fixed width for image */
+            border-radius: 15px;
+            background-size: cover;
+            height: 200px;
+            margin-right: 20px;
+        }
+
+        .content-container {
+            flex: 1;
+            padding: 0 20px;
+        }
+
+        .content-container h1 {
+            font-size: 1.5rem;
+            color: #2c2c2c;
+            margin-bottom: 1rem;
+        }
+
+        .content-container p {
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            color: #444;
+        }
+
+        .main-btn {
+            background: #48ab3a;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .main-btn:hover {
+            background: #369a2b;
+            transform: scale(1.05);
+        }
+
+        /* Animation classes */
+        .animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .img {
+                width: 100%;
+                height: 150px;
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+
+            .content-container {
+                padding: 0;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>CKD Meal Recommendations</li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container left">
+            <div class="img" style="background-image: url('https://images.unsplash.com/photo-1604588019338-9c3f60a67551?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDg4MDN8MHwxfGFsbHwxfHx8fHx8fHwxNjAwMjE4MjA4&ixlib=rb-1.2.1&q=80&w=400');"></div>
+            <div class="content-container">
+                <h1 class="title">Breakfast Options</h1>
+                <p class="info">
+                    1. Oatmeal with berries <br>
+                    <strong>Details:</strong> Rich in fiber and antioxidants, oatmeal helps maintain heart health. Pair with fresh berries for added nutrients. <br><br>
+                    2. Scrambled eggs with spinach <br>
+                    <strong>Details:</strong> Eggs provide high-quality protein, while spinach is loaded with iron and vitamins. <br><br>
+                    3. Whole grain toast with avocado <br>
+                    <strong>Details:</strong> A great source of healthy fats, fiber, and vitamins. Avocado can help regulate blood pressure.
+                </p>
+                <button class="main-btn">More Details</button>
+            </div>
+        </div>
+
+        <div class="container right">
+            <div class="img" style="background-image: url('https://images.unsplash.com/photo-1529156062782-4e3769a18a32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDg4MDN8MHwxfGFsbHwxfHx8fHx8fHwxNjAwMjE4MjA4&ixlib=rb-1.2.1&q=80&w=400');"></div>
+            <div class="content-container">
+                <h1 class="title">Lunch Options</h1>
+                <p class="info">
+                    1. Grilled chicken salad <br>
+                    <strong>Details:</strong> Lean protein from chicken and a variety of vegetables provide essential nutrients. <br><br>
+                    2. Quinoa with steamed vegetables <br>
+                    <strong>Details:</strong> Quinoa is a complete protein, and steaming vegetables helps retain their nutrients. <br><br>
+                    3. Lentil soup <br>
+                    <strong>Details:</strong> High in protein and fiber, lentils are great for heart health and digestion.
+                </p>
+                <button class="main-btn">More Details</button>
+            </div>
+        </div>
+
+        <div class="container left">
+            <div class="img" style="background-image: url('https://images.unsplash.com/photo-1598354882268-e1f5820af2c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDg4MDN8MHwxfGFsbHwxfHx8fHx8fHwxNjAwMjE4MjA4&ixlib=rb-1.2.1&q=80&w=400');"></div>
+            <div class="content-container">
+                <h1 class="title">Dinner Options</h1>
+                <p class="info">
+                    1. Baked salmon with asparagus <br>
+                    <strong>Details:</strong> Salmon is rich in omega-3 fatty acids, which are beneficial for heart health, while asparagus is high in fiber. <br><br>
+                    2. Stir-fried tofu with broccoli <br>
+                    <strong>Details:</strong> Tofu is a great source of plant-based protein, and broccoli is packed with vitamins. <br><br>
+                    3. Brown rice with vegetables <br>
+                    <strong>Details:</strong> Brown rice offers more fiber than white rice and complements the nutrients from mixed vegetables.
+                </p>
+                <button class="main-btn">More Details</button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Function to check if an element is in the viewport
+        function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        // Add the animation class when the element is in the viewport
+        function animateOnScroll() {
+            const containers = document.querySelectorAll('.container');
+            containers.forEach(container => {
+                if (isElementInViewport(container)) {
+                    container.classList.add('animate');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+    </script>
+</body>
+</html>

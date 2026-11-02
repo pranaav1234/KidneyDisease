@@ -1,0 +1,7 @@
+﻿__pycache__/
+*.pyc
+.DS_Store
+.env
+venv/
+.venv/
+Chronic_Kidney_Disease-Machine_Learning-main/dataset/records.csv

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ Section</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fc;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+    .faq-header {
+      font-size: 4rem; 
+      font-weight: 600;
+      margin-top: 2rem;  /* Reduced top margin */
+      margin-bottom: 0.5rem; 
+      text-align: center; 
+      color: #000000; 
+    }
+    .faq-subheader-container {
+      background-color: #d4edda; 
+      border: 1px solid #d2dfd5; 
+      border-radius: 5px; 
+      padding: 0.5rem 1rem; 
+      text-align: center; 
+      margin: 1rem auto; 
+      max-width: 299px; 
+    }
+    .faq-subheader {
+      color: #48ab3f; 
+      font-weight: 400;
+      margin: 0; 
+      font-size: 1.2rem; 
+    }
+    .faq-container {
+      padding: 1rem; 
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: left; 
+    }
+    .faq-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2.3rem 1rem; 
+      margin-top: 3.2rem; 
+    }
+    .faq-box {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 1.5rem; 
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 32.2%; 
+      transition: all 0.3s ease;
+    }
+    .faq-box:hover {
+      transform: translateY(-5px); 
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2); 
+    }
+    .faq-title {
+      font-size: 1.1rem; 
+      font-weight: 600;
+      color: #343a40;
+      margin-bottom: 0.5rem; 
+    }
+    .faq-text {
+      color: #6c757d;
+      font-size: 0.9rem; 
+      margin-bottom: 0.5rem; 
+    }
+    .faq-read-more {
+      color: #7cc576;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .faq-read-more:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 1.5rem;
+      padding: 1rem 0;
+      color: #6c757d;
+      font-size: 0.9rem;
+    }
+
+  /* Glow effects */
+  .glow-effect {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none; /* Prevent interaction with the glow */
+}
+
+.glow-left {
+  top: 0; /* Position it at the top */
+  left: -10%; /* Keep off-screen */
+  width: 300px; /* Size of the glow */
+  height: 300px; /* Size of the glow */
+  background: rgba(76, 165, 80, 0.1); /* Reduced background opacity */
+  box-shadow: 0 0 30px rgba(76, 175, 80, 0.2); /* Reduced box shadow intensity */
+  opacity: 0.5; /* Set constant opacity */
+}
+
+.glow-right {
+  bottom: 0; /* Position it at the bottom */
+  right: -10%; /* Keep off-screen */
+  width: 300px; /* Size of the glow */
+  height: 300px; /* Size of the glow */
+  background: rgba(76, 175, 80, 0.1); /* Reduced background opacity */
+  box-shadow: 0 0 30px rgba(76, 175, 80, 0.2); /* Reduced box shadow intensity */
+  opacity: 0.5; /* Set constant opacity */
+}
+
+    @keyframes pulse {
+      0% {
+        opacity: 0.7;
+      }
+      100% {
+        opacity: 0.3;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .faq-box {
+        width: 100%; 
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="faq-container">
+  <h2 class="faq-header">You ask? We answer</h2>
+
+  <div class="faq-grid">
+    <div class="faq-box">
+      <h3 class="faq-title">What is Chronic Kidney Disease (CKD)</h3>
+      <p class="faq-text">CKD is a gradual loss of kidney function over time, which can eventually lead to kidney failure if left untreated.</p>
+      <a href="#" class="faq-read-more">Read More</a>
+    </div>
+    
+    <div class="faq-box">
+      <h3 class="faq-title">What are the main causes of CKD</h3>
+      <p class="faq-text">The most common causes of CKD are diabetes and high blood pressure. Other causes include glomerulonephritis and genetic disorders.</p>
+      <a href="#" class="faq-read-more">Read More</a>
+    </div>
+    
+    <div class="faq-box">
+      <h3 class="faq-title">What are the symptoms of CKD</h3>
+      <p class="faq-text">Early-stage CKD often has no symptoms, but as it progresses, you may experience fatigue, swelling, and changes in urination.</p>
+      <a href="#" class="faq-read-more">Read More</a>
+    </div>
+    
+    <div class="faq-box">
+      <h3 class="faq-title">How is CKD diagnosed</h3>
+      <p class="faq-text">CKD is diagnosed through blood tests and urine tests, alongside imaging or kidney biopsy if necessary.</p>
+      <a href="#" class="faq-read-more">Read More</a>
+    </div>
+    
+    <div class="faq-box">
+      <h3 class="faq-title">How can CKD be treated</h3>
+      <p class="faq-text">Treatment focuses on managing the underlying cause and slowing disease progression through medication and lifestyle changes.</p>
+      <a href="#" class="faq-read-more">Read More</a>
+    </div>
+    
+    <div class="faq-box">
+      <h3 class="faq-title">Can CKD be prevented</h3>
+      <p class="faq-text">Yes, controlling diabetes and high blood pressure, maintaining a healthy lifestyle, and regular check-ups can reduce the risk.</p>
+      <a href="#" class="faq-read-more">Read More</a>
+    </div>
+  </div>
+</div>
+
+<div class="glow-effect glow-left"></div>
+<div class="glow-effect glow-right"></div>
+
+<footer class="footer">
+  &copy; 2024 Chronic Kidney Disease Awareness. All rights reserved.
+</footer>
+
+</body>
+</html>
